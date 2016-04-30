@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="gr.net.maroulis.library">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:supportsRtl="true">
+
+    </application>
+
+</manifest>
