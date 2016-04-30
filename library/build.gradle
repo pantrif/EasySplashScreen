@@ -18,23 +18,7 @@ android {
     }
 }
 
-ext {
 
-    bintrayRepo = 'maven'
-    bintrayName = 'easy-android-splash-screen'
-
-    // Maven metadata
-    publishedGroupId = 'com.brianattwell.rating_bar'
-    libraryName = 'EasySplashScreen'
-    artifact = 'easy-android-splash-screen'
-
-    libraryDescription = 'Easily create android splash screen'
-    libraryVersion = '0.0.1'
-
-    developerId = 'pantrif'
-    developerName = 'Leonidas Maroulis'
-    developerEmail = 'lmaroulis2003@gmail.com'
-}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

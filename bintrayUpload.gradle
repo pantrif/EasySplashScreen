@@ -17,23 +17,18 @@ def projectName = properties.getProperty("project.name")
 def projectDescription = properties.getProperty("project.description")
 def projectGroupId = properties.getProperty("project.groupId")
 def projectArtifactId = properties.getProperty("project.artifactId")
-def projectVersionName = android.defaultConfig.versionName
-def projectPackaging = properties.getProperty("project.packaging")
-def projectSiteUrl = properties.getProperty("project.siteUrl")
-def projectGitUrl = properties.getProperty("project.gitUrl")
+
+def developerId = properties.getProperty("developerId")
+def developerName = properties.getProperty("developerName")
+def developerEmail = properties.getProperty("developerEmail")
+
 def licenceName = properties.getProperty("project.licenceName")
 def licenceUrl = properties.getProperty("project.licenceUrl")
-
-def developerId = properties.getProperty("developer.id")
-def developerName = properties.getProperty("developer.name")
-def developerEmail = properties.getProperty("developer.email")
-
-def passphraseKey = properties.getProperty("bintray.gpg.password")
 
 def bintrayUser = properties.getProperty("bintray.user")
 def bintrayApikey = properties.getProperty("bintray.apikey")
 
-def javadocName = properties.getProperty("javadoc.name")
+//def javadocName = properties.getProperty("javadoc.name")
 
 group = projectGroupId
 
@@ -46,9 +41,6 @@ install {
                 description projectDescription
                 groupId projectGroupId
                 artifactId projectArtifactId
-                version projectVersionName
-                packaging projectPackaging
-                url projectSiteUrl
                 licenses {
                     license {
                         name licenceName
@@ -61,11 +53,6 @@ install {
                         name developerName
                         email developerEmail
                     }
-                }
-                scm {
-                    connection projectGitUrl
-                    developerConnection projectGitUrl
-                    url projectSiteUrl
                 }
             }
         }
@@ -94,17 +81,7 @@ artifacts {
     archives sourcesJar
 }
 
-// javadoc configuration
-javadoc {
-    options{
-        encoding "UTF-8"
-        charSet 'UTF-8'
-        author true
-        version projectVersionName
-        links "http://docs.oracle.com/javase/7/docs/api"
-        title javadocName
-    }
-}
+
 
 // bintray configuration
 bintray {
@@ -115,16 +92,8 @@ bintray {
         repo = "maven"
         name = projectName
         description = projectDescription
-        websiteUrl = projectSiteUrl
-        vcsUrl = projectGitUrl
         licenses = [licenceName]
-        publish = false
-        version {
-            gpg {
-                sign = true //Determines whether to GPG sign the files. The default is false
-                passphrase = passphraseKey
-            }
-        }
+        publish = true
 
     }
 }
