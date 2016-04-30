@@ -18,7 +18,29 @@ android {
     }
 }
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'easy-android-splash-screen'
 
+    publishedGroupId = 'gr.pantrif.easy_splash_screen'
+    libraryName = 'Easy Android Splash Screen'
+    artifact = 'easy-android-splash-screen'
+
+    libraryDescription = 'Easily create and customize splash screen in you android project'
+
+    siteUrl = 'https://github.com/pantrif/EasySplashScreen'
+    gitUrl = 'https://github.com/pantrif/EasySplashScreen.git'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'pantrif'
+    developerName = 'Leonidas Maroulis'
+    developerEmail = 'lmaroulis2003@gmail.com'
+
+    licenseName = 'MIT'
+    licenseUrl = 'http://www.opensource.org/licenses/mit-license.php'
+    allLicenses = ["MIT"]
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -26,4 +48,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
 }
 
-apply from: rootProject.file("bintrayUpload.gradle")
+
+apply from: rootProject.file("installv1.gradle")
+apply from: rootProject.file("bintrayv1.gradle")
