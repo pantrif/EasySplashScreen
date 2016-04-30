@@ -2,10 +2,8 @@ package gr.net.maroulis.library;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
@@ -20,30 +18,22 @@ public class EasySplashScreen {
 
     Activity mActivity;
     LayoutInflater mInflater;
-    private View mView;
-
-    private int splashBackgroundColor=0;
-    private int splashBackgroundResource=0;
-
-    private int mLogo = 0;
     ImageView logo_iv;
-
     TextView header_tv;
     TextView footer_tv;
     TextView before_logo_tv;
     TextView after_logo_tv;
-
     String header_text=null;
     String footer_text=null;
     String before_logo_text=null;
     String after_logo_text = null;
-
-    private Class<?> TargetActivity = null;
-
     RelativeLayout splash_wrapper_rl;
-
     Bundle bundle = null;
-
+    private View mView;
+    private int splashBackgroundColor=0;
+    private int splashBackgroundResource=0;
+    private int mLogo = 0;
+    private Class<?> TargetActivity = null;
     private int SPLASH_TIME_OUT = 2000; //The time before launch target Activity - by default 2 seconds
 
     public EasySplashScreen (Activity activity){
