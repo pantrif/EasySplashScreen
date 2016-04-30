@@ -1,4 +1,4 @@
-# EasySplashScreen
+# Easy Splash Screen Android
 Easily create your company splash screen
 
 <img src="/resources/cover.png" width="80%" alt="Android Easy Splash Screen"/>
