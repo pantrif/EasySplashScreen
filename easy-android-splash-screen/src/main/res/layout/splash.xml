@@ -8,37 +8,37 @@
         android:id="@+id/header_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
         />
 
     <TextView
         android:id="@+id/before_logo_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/logo"
         android:layout_centerHorizontal="true"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_above="@+id/logo"
         />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:adjustViewBounds="true"
-        android:layout_centerHorizontal="true" />
+        android:adjustViewBounds="true" />
 
     <TextView
         android:id="@+id/after_logo_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_below="@+id/logo"
        />
 
 
@@ -46,9 +46,9 @@
         android:id="@+id/footer_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
         />
 
 

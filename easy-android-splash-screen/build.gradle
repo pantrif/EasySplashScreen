@@ -22,7 +22,7 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'easy-android-splash-screen'
 
-    publishedGroupId = 'gr.pantrif.easy_splash_screen'
+    publishedGroupId = 'gr.pantrif'
     libraryName = 'Easy Android Splash Screen'
     artifact = 'easy-android-splash-screen'
 
