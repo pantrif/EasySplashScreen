@@ -9,6 +9,14 @@ Easy splash screen library allows you to generate beautiful and customizable Spl
 
 
 ## Usage
+### Setup
+This library is available on Jcenter.
+
+```groovy
+compile 'gr.pantrif:easy-android-splash-screen:0.0.1'
+```
+
+
 ### Available options
 ```java
 View easySplashScreenView = new EasySplashScreen(MainActivity.this)
