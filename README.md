@@ -29,7 +29,7 @@ View easySplashScreenView = new EasySplashScreen(MainActivity.this)
                 .withBeforeLogoText("My cool company")
                 .withLogo(R.drawable.logo)
                 .withAfterLogoText("Some more details")
-                .create;
+                .create();
 
 setContentView(easySplashScreenView);
 ```
