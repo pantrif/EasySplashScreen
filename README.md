@@ -2,7 +2,7 @@
 # Easy Splash Screen Android
 Easily create your company splash screen
 
-<img src="/resources/cover_image.png" width="80%" alt="Android Easy Splash Screen"/>
+<img src="/resources/intro.png" width="80%" alt="Android Easy Splash Screen"/>
 
 Easy splash screen library allows you to generate beautiful and customizable Splash screens with less effort
 
